@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="style/event_style.css">
+</head>
+<body style="background-color: gray;">
+    <script src="js/event_script.js"></script>
+    <div class="hero">
+        <nav>
+            <ul class="nav-links">
+                <li> <a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li> <a href="event.html"><i class="fas fa-calendar-alt"></i> Event</a></li>
+                <li> <a href="#"><i class="fas fa-graduation-cap"></i> Academics</a></li>
+                <li> <a href="#"><i class="fas fa-envelope"></i> Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>Upcoming Event</h1>
+            <div class="image">
+                <img src="iv/event.jpg" alt="Image" class="thumbnail" onclick="openFullscreen()">
+            </div>
+        
+            <div id="fullscreen" class="fullscreen">
+                <span class="close" onclick="closeFullscreen()">&times;</span>
+                <img src="" alt="Fullscreen Image" class="fullscreen-image">
+            </div>
+            
+           
+        
+            <div class="countdown-container">
+                <p class="countdown-label">Time Remaining:</p>
+                <div id="countdown" class="countdown">
+                    <div class="countdown-box" id="days">00</div>
+                    <div class="countdown-label">Day</div>
+                    <div class="countdown-box" id="hours">00</div>
+                    <div class="countdown-label">Hour</div>
+                    <div class="countdown-box" id="minutes">00</div>
+                    <div class="countdown-label">Minute</div>
+                    <div class="countdown-box" id="seconds">00</div>
+                    <div class="countdown-label">Second</div>
+                </div>
+            </div>
+            <p class="department-label">Department Wise Event</p> <!-- New label -->
+            <div class="department-icons">
+                <a href="cse_event.html"><i class="fas fa-laptop-code"></i> Computer Science</a>
+                <a href="mech_event.html"><i class="fas fa-cogs"></i> Mechanical</a>
+                <a href="civil_event.html"><i class="fas fa-hard-hat"></i> Civil</a>
+                <a href="aids_event.html"><i class="fas fa-disease"></i> AIDS</a>
+                <a href="mechat_event.html"><i class="fas fa-robot"></i> Mechatronics</a>
+                <a href="ar_event.html"><i class="fas fa-robot"></i> Automation and Robotics</a>
+                <a href="ece_event.html"><i class="fas fa-microchip"></i> ECE</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

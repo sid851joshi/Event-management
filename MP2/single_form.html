@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"> <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="style/single_form.css"> <!-- Custom CSS -->
+</head>
+<body>
+
+<div class="container">
+    <h2 class="text-center mb-4">Event Registration</h2>
+    <form id="registrationForm" enctype="multipart/form-data" onsubmit="return validateForm()">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="college" class="form-label">College Name</label>
+            <input type="text" class="form-control" id="college" name="college" required>
+        </div>
+        <div class="mb-3">
+            <label for="mobile" class="form-label">Mobile Number</label>
+            <input type="tel" class="form-control" id="mobile" name="mobile" required>
+        </div>
+        <div class="mb-3">
+            <label for="whatsapp" class="form-label">WhatsApp Number</label>
+            <input type="tel" class="form-control" id="whatsapp" name="whatsapp" required>
+        </div>
+        <div class="mb-3">
+            <label for="paymentGateway" class="form-label">Payment:</label>
+            <img src="iv/qr.png" class="form-control" id="paymentGateway" alt="Payment Gateway" style="max-width: 100%;">
+        </div>
+        <div class="mb-3">
+            <label for="paymentScreenshot" class="form-label">Payment Screenshot</label>
+            <input type="file" class="form-control" id="paymentScreenshot" name="paymentScreenshot" accept="image/*" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> <!-- Include Bootstrap JS -->
+<script src="js/single_form.js"></script> <!-- Custom JavaScript -->
+</body>
+</html>
